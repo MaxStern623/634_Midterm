@@ -7,7 +7,6 @@ print("Amazon\nBest buy\nKmart\nTarget\nHomegoods")
 File_name = input("please enter the name of the database: ")
 file_name = str(os.path.dirname(__file__))+"/"+File_name+'.csv'
 abs_path = os.path.abspath(file_name)
-print(abs_path)
 try:
     csvFile = pan.read_csv(abs_path,header=None, delimiter=',', engine='python', names=range(10))
 except:
